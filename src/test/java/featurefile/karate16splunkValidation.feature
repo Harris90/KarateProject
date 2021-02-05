@@ -30,6 +30,7 @@ Feature: Karate Test Suite 17
     * def res = get response
     * util.writeToFile("splunkkvalidatoin.txt",res)
     * print responseType
+    * print checking after git intigration
 
     #---- when response xml is too large, get relevant node and then validate it
     * def title = get response //feed/title
