@@ -1,0 +1,28 @@
+<testsuite failures="0" name="featurefile/karate11.feature" skipped="0" tests="2" time="3.673685">
+  <testcase classname="featurefile.karate11" name="rest api TestCase1" time="1.862239">
+    <system-out>Given url "http://dummy.restapiexample.com/api/v1/employees" .............. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* match responseType == "json" ............................................ passed
+* match response.status == "success" ...................................... passed
+* match response.data[0].employee_name == "Tiger Nixon" ................... passed
+* match response.status == "#string" ...................................... passed</system-out>
+  </testcase>
+  <testcase classname="featurefile.karate11" name="rest api TestCase2" time="1.811446">
+    <system-out>Given url "http://dummy.restapiexample.com/api/v1/employees" .............. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* match responseType == "json" ............................................ passed
+* match response.status == "success" ...................................... passed
+* match response.data[0].employee_name == "Tiger Nixon" ................... passed
+* match response.status == "#string" ...................................... passed
+Given url "http://dummy.restapiexample.com" ............................... passed
+And path "/api/v1/employees" .............................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* match responseType == "json" ............................................ passed
+* match response.status == "success" ...................................... passed
+* match response.data[0].employee_name == "Tiger Nixon" ................... passed
+* match response.status == "#string" ...................................... passed</system-out>
+  </testcase>
+</testsuite>

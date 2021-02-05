@@ -1,0 +1,17 @@
+<testsuite failures="0" name="featurefile/calledFeature.feature" skipped="0" tests="1" time="0.824978">
+  <testcase classname="featurefile.calledFeature" name="CalledFeature TestCase1" time="0.824978">
+    <system-out>Given url "https://www.w3schools.com/xml/tempconvert.asmx/CelsiusToFahrenheit" . passed
+And header Content-Type = "application/x-www-form-urlencoded" ............. passed
+And request "Celsius=56" .................................................. passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed
+* print responseHeaders ................................................... passed
+* print responseType ...................................................... passed
+* print responseTime ...................................................... passed
+* print response .......................................................... passed
+* match responseType == "xml" ............................................. passed
+* assert responseTime &lt;= 1100 ............................................. passed
+* match response contains "2.8" ........................................... passed
+* match response //string == 132.8 ........................................ passed</system-out>
+  </testcase>
+</testsuite>

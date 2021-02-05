@@ -1,0 +1,18 @@
+<testsuite failures="0" name="featurefile/karate14.feature" skipped="0" tests="2" time="0.016037">
+  <testcase classname="featurefile.karate14" name="Non static method TC" time="0.01193">
+    <system-out>* def env1 = .............................................................. passed
+* print  env1() ........................................................... passed
+* def res = call env1 ..................................................... passed
+* print res ............................................................... passed</system-out>
+  </testcase>
+  <testcase classname="featurefile.karate14" name="static method TC" time="0.004107">
+    <system-out>* def env1 = .............................................................. passed
+* print  env1() ........................................................... passed
+* def res = call env1 ..................................................... passed
+* print res ............................................................... passed
+* def env1 = .............................................................. passed
+* print  env1() ........................................................... passed
+* def res = call env1 ..................................................... passed
+* print res ............................................................... passed</system-out>
+  </testcase>
+</testsuite>

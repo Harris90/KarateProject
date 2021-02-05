@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>featurefile.karate15</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">1</div>
+            
+<div class="bg-danger" id="nav-fail">3</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2021-02-05 04:05:37 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1:8]">[1:8] select stmt test case </a>
+</div>
+<div class="nav-item failed">
+<a href="#[2:15]">[2:15] insert stmt test case </a>
+</div>
+<div class="nav-item failed">
+<a href="#[3:21]">[3:21] update stmt test case </a>
+</div>
+<div class="nav-item failed">
+<a href="#[4:27]">[4:27] delete stmt test case </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">featurefile/karate15.feature</span><span class="feature-description">Karate Test Suite 15</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:8]">
+<div class="heading-container">
+<div class="scenario-tags">
+<a class="badge badge-primary" href="karate-tags.html">select</a>
+</div>
+<span class="scenario-keyword">Scenario: [1:8]</span><span class="scenario-name">select stmt test case </span>
+</div>
+<div class="scenario-time passed">ms: 171</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1:8]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1:8]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">* def db = Java.type('misc.Mydbutils')</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="preformatted" data-parent="1">16:04:49.321 From karate-config file</div>
+<div class="step-row">
+<div class="step-container" id="2">
+<div class="step-ref passed">2</div>
+<div class="step-cell passed">* def rows = db.selectStatement("select * from tools")</div>
+</div>
+<div class="time-cell passed">166</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="3">
+<div class="step-ref passed">3</div>
+<div class="step-cell passed">* print rows</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="3">16:04:49.493 [print] 101,Selenium,Se-HQ,
+102,UFT,Microfocus,
+103,RFT,IBM Rational,
+104,SilkTest,Microfocus,
+1111,TestComplete,SmartBear,
+106,Sasi,Sasi,
+106,Sasi,Sasi,
+106,Sasi,Sasi,</div>
+<div class="step-row">
+<div class="step-container" id="4">
+<div class="step-ref passed">4</div>
+<div class="step-cell passed">* match rows contains "Selenium"</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="4">16:04:49.493 after scenario inside config</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[2:15]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [2:15]</span><span class="scenario-name">insert stmt test case </span>
+</div>
+<div class="scenario-time failed">ms: 47</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[2:15]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[2:15]bg">
+<div class="step-container" id="5">
+<div class="step-ref bg-step">5</div>
+<div class="step-cell passed">* def db = Java.type('misc.Mydbutils')</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="5">16:04:49.509 From karate-config file</div>
+<div class="step-row">
+<div class="step-container" id="6">
+<div class="step-ref passed">6</div>
+<div class="step-cell passed">* def res = db.insertStatement("Insert into tools values(562,'sample2','xyz')")</div>
+</div>
+<div class="time-cell passed">45</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="7">
+<div class="step-ref passed">7</div>
+<div class="step-cell passed">* print res</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="7">16:04:49.556 [print] Exception: Login failed for user 'sa'. ClientConnectionId:f972043e-57e1-43d0-b312-3d6e0847ad40</div>
+<div class="step-row">
+<div class="step-container" id="8">
+<div class="step-ref failed">8</div>
+<div class="step-cell failed">* match res == 'Success'</div>
+</div>
+<div class="time-cell failed">2</div>
+</div>
+<div class="preformatted" data-parent="8">16:04:49.556 assertion failed: path: $, actual: 'Exception: Login failed for user 'sa'. ClientConnectionId:f972043e-57e1-43d0-b312-3d6e0847ad40', expected: 'Success', reason: not equal16:04:49.556 after scenario inside config
+karate15.feature:19 - path: $, actual: 'Exception: Login failed for user 'sa'. ClientConnectionId:f972043e-57e1-43d0-b312-3d6e0847ad40', expected: 'Success', reason: not equal</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[3:21]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [3:21]</span><span class="scenario-name">update stmt test case </span>
+</div>
+<div class="scenario-time failed">ms: 24</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[3:21]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[3:21]bg">
+<div class="step-container" id="9">
+<div class="step-ref bg-step">9</div>
+<div class="step-cell passed">* def db = Java.type('misc.Mydbutils')</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="9">16:04:49.556 From karate-config file</div>
+<div class="step-row">
+<div class="step-container" id="10">
+<div class="step-ref passed">10</div>
+<div class="step-cell passed">* def rowsAffected = db.updateStatement("update tools set toolName='sample3' where toolId=30")</div>
+</div>
+<div class="time-cell passed">22</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="11">
+<div class="step-ref passed">11</div>
+<div class="step-cell passed">* print rowsAffected</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="11">16:04:49.571 [print] -1</div>
+<div class="step-row">
+<div class="step-container" id="12">
+<div class="step-ref failed">12</div>
+<div class="step-cell failed">* assert rowsAffected &gt;= 1</div>
+</div>
+<div class="time-cell failed">2</div>
+</div>
+<div class="preformatted" data-parent="12">16:04:49.571 assertion failed: assert evaluated to false: rowsAffected &gt;= 116:04:49.571 after scenario inside config
+karate15.feature:25 - assert evaluated to false: rowsAffected &gt;= 1</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[4:27]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [4:27]</span><span class="scenario-name">delete stmt test case </span>
+</div>
+<div class="scenario-time failed">ms: 22</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[4:27]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[4:27]bg">
+<div class="step-container" id="13">
+<div class="step-ref bg-step">13</div>
+<div class="step-cell passed">* def db = Java.type('misc.Mydbutils')</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="13">16:04:49.587 From karate-config file</div>
+<div class="step-row">
+<div class="step-container" id="14">
+<div class="step-ref passed">14</div>
+<div class="step-cell passed">* def rowsAffected = db.deleteStatement("delete from tools where toolId=30")</div>
+</div>
+<div class="time-cell passed">21</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="15">
+<div class="step-ref passed">15</div>
+<div class="step-cell passed">* print rowsAffected</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="15">16:04:49.602 [print] -1</div>
+<div class="step-row">
+<div class="step-container" id="16">
+<div class="step-ref failed">16</div>
+<div class="step-cell failed">* assert rowsAffected &gt;= 1</div>
+</div>
+<div class="time-cell failed">0</div>
+</div>
+<div class="preformatted" data-parent="16">16:04:49.602 assertion failed: assert evaluated to false: rowsAffected &gt;= 116:04:49.602 after scenario inside config
+karate15.feature:31 - assert evaluated to false: rowsAffected &gt;= 1</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<testsuite failures="1" name="src/test/java/featurefile/karate04SoapApi.feature" skipped="0" tests="1" time="1.79059">
+  <testcase classname="src.test.java.featurefile.karate04SoapApi" name="soap api TestCase1" time="1.79059">
+    <failure message="karate04SoapApi.feature:32 - path: //CelsiusToFahrenheitResult, actual: '96.8', expected: '98.8', reason: not equal">Given url "https://www.w3schools.com/xml/tempconvert.asmx" ................ passed
+And header Content-Type = "text/xml; charset=utf-8" ....................... passed
+And request ............................................................... passed
+When soap action "https://www.w3schools.com/xml/CelsiusToFahrenheit" ...... passed
+Then status 200 ........................................................... passed
+* print responseHeaders ................................................... passed
+* print responseHeaders["Server"] ......................................... passed
+* print responseHeaders["Server"][0] ...................................... passed
+* match responseHeaders["Server"] == ["Microsoft-IIS/7.5"] ................ passed
+* print responseType ...................................................... passed
+* match responseType == "xml" ............................................. passed
+* print response .......................................................... passed
+* match response contains "96.8" .......................................... passed
+* print responseTime ...................................................... passed
+* assert responseTime &lt;= 2000 ............................................. passed
+* match response //CelsiusToFahrenheitResult == 98.8 ...................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karate04SoapApi.feature:32 - path: //CelsiusToFahrenheitResult, actual: '96.8', expected: '98.8', reason: not equal&#13;
+	at ✽.* match response //CelsiusToFahrenheitResult == 98.8 (karate04SoapApi.feature:32)</failure>
+  </testcase>
+</testsuite>

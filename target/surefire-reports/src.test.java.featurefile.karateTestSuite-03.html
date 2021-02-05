@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>src.test.java.featurefile.karateTestSuite-03</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">0</div>
+            
+<div class="bg-danger" id="nav-fail">1</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2021-02-02 03:55:10 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item failed">
+<a href="#[6:42]">[6:42] XML test case 6 </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/test/java/featurefile/karateTestSuite-03.feature</span><span class="feature-description">Karate Test Suite 3 | validating XML content</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[6:42]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [6:42]</span><span class="scenario-name">XML test case 6 </span>
+</div>
+<div class="scenario-time failed">ms: 21</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="1">
+<div class="step-ref passed">1</div>
+<div class="step-cell passed">Given def xml =</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="1">&lt;info&gt;
+    &lt;tool&gt;
+      &lt;name&gt;Karate&lt;/name&gt;
+      &lt;version&gt;0.9.6&lt;/version&gt;
+    &lt;/tool&gt;
+    &lt;tool&gt;
+      &lt;name&gt;IntelliJ&lt;/name&gt;
+      &lt;version&gt;2020.2&lt;/version&gt;
+    &lt;/tool&gt;
+&lt;/info&gt;
+15:55:10.677 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="step-row">
+<div class="step-container" id="2">
+<div class="step-ref passed">2</div>
+<div class="step-cell passed">* match xml/info/tool[1]/name contains "Karate"</div>
+</div>
+<div class="time-cell passed">16</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="3">
+<div class="step-ref passed">3</div>
+<div class="step-cell passed">And match xml/info/tool[2]/name == "IntelliJ"</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="4">
+<div class="step-ref failed">4</div>
+<div class="step-cell failed">* match xml/info/tool[1]/name contains "Karate"</div>
+</div>
+<div class="time-cell failed">0</div>
+</div>
+<table data-parent="4">
+<tr>
+<td>match xml/info/tool[2]/name == "Intell3435"</td>
+</tr>
+</table>
+<div class="preformatted" data-parent="4">karateTestSuite-03.feature:58 - argument type mismatch</div>
+<div class="step-row">
+<div class="step-container" id="5">
+<div class="step-ref skipped">5</div>
+<div class="step-cell skipped">* match xml/info/tool[2]/name == "IntelliJ"</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="6">
+<div class="step-ref skipped">6</div>
+<div class="step-cell skipped">* print "end of match"</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

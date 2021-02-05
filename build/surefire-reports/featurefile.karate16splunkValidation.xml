@@ -1,0 +1,55 @@
+<testsuite failures="0" name="featurefile/karate16splunkValidation.feature" skipped="0" tests="2" time="0.165781">
+  <testcase classname="featurefile.karate16splunkValidation" name="Job Search 1" time="0.082664">
+    <system-out>* def login = ............................................................. passed
+* def auth = login("palmetoadmin", "P@lmeto@123") ......................... passed
+* print auth .............................................................. passed
+* configure ssl = true .................................................... passed
+Given url "https://192.168.1.62:8089" ..................................... passed
+And header Authorization = auth ........................................... passed
+Given path "/services/search/jobs" ........................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def util = Java.type("misc.Utils") ...................................... passed
+* def res = get response .................................................. passed
+* util.writeToFile("splunkkvalidatoin.txt",res) ........................... passed
+* print responseType ...................................................... passed
+* def title = get response //feed/title ................................... passed
+* print title ............................................................. passed
+* match title == "jobs" ................................................... passed</system-out>
+  </testcase>
+  <testcase classname="featurefile.karate16splunkValidation" name="Alert Search 1" time="0.083116">
+    <system-out>* def login = ............................................................. passed
+* def auth = login("palmetoadmin", "P@lmeto@123") ......................... passed
+* print auth .............................................................. passed
+* configure ssl = true .................................................... passed
+Given url "https://192.168.1.62:8089" ..................................... passed
+And header Authorization = auth ........................................... passed
+Given path "/services/search/jobs" ........................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def util = Java.type("misc.Utils") ...................................... passed
+* def res = get response .................................................. passed
+* util.writeToFile("splunkkvalidatoin.txt",res) ........................... passed
+* print responseType ...................................................... passed
+* def title = get response //feed/title ................................... passed
+* print title ............................................................. passed
+* match title == "jobs" ................................................... passed
+* def login = ............................................................. passed
+* def auth = login("palmetoadmin", "P@lmeto@123") ......................... passed
+* print auth .............................................................. passed
+* configure ssl = true .................................................... passed
+Given url "https://192.168.1.62:8089" ..................................... passed
+And header Authorization = auth ........................................... passed
+Given path "/services/alerts/alert_actions" ............................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* print responseType ...................................................... passed
+* def util = Java.type("misc.Utils") ...................................... passed
+* def res = get response .................................................. passed
+* util.writeToFile("splunkoutput.txt",res) ................................ passed
+* print responseType ...................................................... passed
+* def title = get response //feed/title ................................... passed
+* print title ............................................................. passed
+* match title == "alert_actions" .......................................... passed</system-out>
+  </testcase>
+</testsuite>

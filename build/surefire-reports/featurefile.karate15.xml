@@ -1,0 +1,77 @@
+<testsuite failures="3" name="featurefile/karate15.feature" skipped="0" tests="4" time="0.263686">
+  <testcase classname="featurefile.karate15" name="select stmt test case" time="0.171155">
+    <system-out>* def db = Java.type('misc.Mydbutils') .................................... passed
+* def rows = db.selectStatement("select * from tools") .................... passed
+* print rows .............................................................. passed
+* match rows contains "Selenium" .......................................... passed</system-out>
+  </testcase>
+  <testcase classname="featurefile.karate15" name="insert stmt test case" time="0.047226">
+    <failure message="karate15.feature:19 - path: $, actual: 'Exception: Login failed for user 'sa'. ClientConnectionId:f972043e-57e1-43d0-b312-3d6e0847ad40', expected: 'Success', reason: not equal">* def db = Java.type('misc.Mydbutils') .................................... passed
+* def rows = db.selectStatement("select * from tools") .................... passed
+* print rows .............................................................. passed
+* match rows contains "Selenium" .......................................... passed
+* def db = Java.type('misc.Mydbutils') .................................... passed
+* def res = db.insertStatement("Insert into tools values(562,'sample2','xyz')") . passed
+* print res ............................................................... passed
+* match res == 'Success' .................................................. failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karate15.feature:19 - path: $, actual: 'Exception: Login failed for user 'sa'. ClientConnectionId:f972043e-57e1-43d0-b312-3d6e0847ad40', expected: 'Success', reason: not equal&#13;
+	at ✽.* match res == 'Success' (karate15.feature:19)</failure>
+  </testcase>
+  <testcase classname="featurefile.karate15" name="update stmt test case" time="0.023742">
+    <failure message="karate15.feature:25 - assert evaluated to false: rowsAffected &gt;= 1">* def db = Java.type('misc.Mydbutils') .................................... passed
+* def rows = db.selectStatement("select * from tools") .................... passed
+* print rows .............................................................. passed
+* match rows contains "Selenium" .......................................... passed
+* def db = Java.type('misc.Mydbutils') .................................... passed
+* def res = db.insertStatement("Insert into tools values(562,'sample2','xyz')") . passed
+* print res ............................................................... passed
+* match res == 'Success' .................................................. failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karate15.feature:19 - path: $, actual: 'Exception: Login failed for user 'sa'. ClientConnectionId:f972043e-57e1-43d0-b312-3d6e0847ad40', expected: 'Success', reason: not equal&#13;
+	at ✽.* match res == 'Success' (karate15.feature:19)&#13;
+
+* def db = Java.type('misc.Mydbutils') .................................... passed
+* def rowsAffected = db.updateStatement("update tools set toolName='sample3' where toolId=30") . passed
+* print rowsAffected ...................................................... passed
+* assert rowsAffected &gt;= 1 ................................................ failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karate15.feature:25 - assert evaluated to false: rowsAffected &gt;= 1&#13;
+	at ✽.* assert rowsAffected &gt;= 1 (karate15.feature:25)</failure>
+  </testcase>
+  <testcase classname="featurefile.karate15" name="delete stmt test case" time="0.021562">
+    <failure message="karate15.feature:31 - assert evaluated to false: rowsAffected &gt;= 1">* def db = Java.type('misc.Mydbutils') .................................... passed
+* def rows = db.selectStatement("select * from tools") .................... passed
+* print rows .............................................................. passed
+* match rows contains "Selenium" .......................................... passed
+* def db = Java.type('misc.Mydbutils') .................................... passed
+* def res = db.insertStatement("Insert into tools values(562,'sample2','xyz')") . passed
+* print res ............................................................... passed
+* match res == 'Success' .................................................. failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karate15.feature:19 - path: $, actual: 'Exception: Login failed for user 'sa'. ClientConnectionId:f972043e-57e1-43d0-b312-3d6e0847ad40', expected: 'Success', reason: not equal&#13;
+	at ✽.* match res == 'Success' (karate15.feature:19)&#13;
+
+* def db = Java.type('misc.Mydbutils') .................................... passed
+* def rowsAffected = db.updateStatement("update tools set toolName='sample3' where toolId=30") . passed
+* print rowsAffected ...................................................... passed
+* assert rowsAffected &gt;= 1 ................................................ failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karate15.feature:25 - assert evaluated to false: rowsAffected &gt;= 1&#13;
+	at ✽.* assert rowsAffected &gt;= 1 (karate15.feature:25)&#13;
+
+* def db = Java.type('misc.Mydbutils') .................................... passed
+* def rowsAffected = db.deleteStatement("delete from tools where toolId=30") . passed
+* print rowsAffected ...................................................... passed
+* assert rowsAffected &gt;= 1 ................................................ failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karate15.feature:31 - assert evaluated to false: rowsAffected &gt;= 1&#13;
+	at ✽.* assert rowsAffected &gt;= 1 (karate15.feature:31)</failure>
+  </testcase>
+</testsuite>

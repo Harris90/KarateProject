@@ -1,0 +1,13 @@
+<testsuite failures="1" name="src/test/java/featurefile/karate07.feature" skipped="0" tests="1" time="0.013126">
+  <testcase classname="src.test.java.featurefile.karate07" name="Karate logical operator validation" time="0.013126">
+    <failure message="karate07.feature:7 - assert evaluated to false: a==10 &amp;&amp; b==20">* def a = 52 .............................................................. passed
+* def b = 20 .............................................................. passed
+* assert a==10 &amp;&amp; b==20 ................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karate07.feature:7 - assert evaluated to false: a==10 &amp;&amp; b==20&#13;
+	at ✽.* assert a==10 &amp;&amp; b==20 (karate07.feature:7)&#13;
+
+* print "After assert" .................................................... skipped</failure>
+  </testcase>
+</testsuite>

@@ -1,0 +1,1336 @@
+16:03:18.149 From karate-config file 
+16:03:18.618 request:
+1 > POST https://www.w3schools.com/xml/tempconvert.asmx/CelsiusToFahrenheit
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 10
+1 > Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 > Host: www.w3schools.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+Celsius=56
+
+16:03:19.102 response time in milliseconds: 489.59
+1 < 200
+1 < Cache-Control: private, max-age=0,public
+1 < Content-Type: text/xml; charset=utf-8
+1 < Date: Fri, 05 Feb 2021 10:25:09 GMT
+1 < Server: Microsoft-IIS/7.5
+1 < Vary: Accept-Encoding
+1 < X-AspNet-Version: 4.0.30319
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: ASP.NET
+<?xml version="1.0" encoding="utf-8"?>
+<string xmlns="https://www.w3schools.com/xml/">132.8</string>
+
+16:03:19.102 [print] {
+  "Cache-Control": [
+    "private, max-age=0,public"
+  ],
+  "Content-Type": [
+    "text/xml; charset=utf-8"
+  ],
+  "Date": [
+    "Fri, 05 Feb 2021 10:25:09 GMT"
+  ],
+  "Server": [
+    "Microsoft-IIS/7.5"
+  ],
+  "Vary": [
+    "Accept-Encoding"
+  ],
+  "X-AspNet-Version": [
+    "4.0.30319"
+  ],
+  "X-Frame-Options": [
+    "SAMEORIGIN"
+  ],
+  "X-Powered-By": [
+    "ASP.NET"
+  ]
+}
+
+16:03:19.102 [print] xml
+16:03:19.102 [print] 490
+16:03:19.102 [print] <string xmlns="https://www.w3schools.com/xml/">132.8</string>
+
+16:03:19.181 after scenario inside config 
+16:03:19.196 From karate-config file 
+16:03:19.212 assertion failed: assert evaluated to false: a==10 && b==20
+16:03:19.212 after scenario inside config 
+16:03:19.212 From karate-config file 
+16:03:19.243 [print] After data type validation
+16:03:19.243 after scenario inside config 
+16:03:19.259 From karate-config file 
+16:03:19.321 request:
+1 > POST https://www.w3schools.com/xml/tempconvert.asmx
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 359
+1 > Content-Type: text/xml; charset=UTF-8
+1 > Host: www.w3schools.com
+1 > SOAPAction: https://www.w3schools.com/xml/CelsiusToFahrenheit
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soap:Body>
+        <CelsiusToFahrenheit xmlns="https://www.w3schools.com/xml/">
+            <Celsius>36</Celsius>
+        </CelsiusToFahrenheit>
+    </soap:Body>
+</soap:Envelope>
+
+16:03:19.634 response time in milliseconds: 313.54
+1 < 200
+1 < Cache-Control: private, max-age=0,public
+1 < Content-Type: text/xml; charset=utf-8
+1 < Date: Fri, 05 Feb 2021 10:25:09 GMT
+1 < Server: Microsoft-IIS/7.5
+1 < Vary: Accept-Encoding
+1 < X-AspNet-Version: 4.0.30319
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: ASP.NET
+<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><CelsiusToFahrenheitResponse xmlns="https://www.w3schools.com/xml/"><CelsiusToFahrenheitResult>96.8</CelsiusToFahrenheitResult></CelsiusToFahrenheitResponse></soap:Body></soap:Envelope>
+
+16:03:19.634 [print] {
+  "Cache-Control": [
+    "private, max-age=0,public"
+  ],
+  "Content-Type": [
+    "text/xml; charset=utf-8"
+  ],
+  "Date": [
+    "Fri, 05 Feb 2021 10:25:09 GMT"
+  ],
+  "Server": [
+    "Microsoft-IIS/7.5"
+  ],
+  "Vary": [
+    "Accept-Encoding"
+  ],
+  "X-AspNet-Version": [
+    "4.0.30319"
+  ],
+  "X-Frame-Options": [
+    "SAMEORIGIN"
+  ],
+  "X-Powered-By": [
+    "ASP.NET"
+  ]
+}
+
+16:03:19.634 [print] [
+  "Microsoft-IIS/7.5"
+]
+
+16:03:19.634 [print] Microsoft-IIS/7.5
+16:03:19.634 [print] xml
+16:03:19.634 [print] <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <soap:Body>
+    <CelsiusToFahrenheitResponse xmlns="https://www.w3schools.com/xml/">
+      <CelsiusToFahrenheitResult>96.8</CelsiusToFahrenheitResult>
+    </CelsiusToFahrenheitResponse>
+  </soap:Body>
+</soap:Envelope>
+
+16:03:19.634 assertion failed: path: , actual: '<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><soap:Body><CelsiusToFahrenheitResponse xmlns="https://www.w3schools.com/xml/"><CelsiusToFahrenheitResult>96.8</CelsiusToFahrenheitResult></CelsiusToFahrenheitResponse></soap:Body></soap:Envelope>', expected: '98.8', reason: not a sub-string
+16:03:19.634 after scenario inside config 
+16:03:19.634 From karate-config file 
+16:03:19.649 request:
+1 > POST https://www.w3schools.com/xml/tempconvert.asmx/CelsiusToFahrenheit
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 10
+1 > Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 > Host: www.w3schools.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+Celsius=56
+
+16:03:19.946 response time in milliseconds: 309.11
+1 < 200
+1 < Cache-Control: private, max-age=0,public
+1 < Content-Type: text/xml; charset=utf-8
+1 < Date: Fri, 05 Feb 2021 10:25:10 GMT
+1 < Server: Microsoft-IIS/7.5
+1 < Vary: Accept-Encoding
+1 < X-AspNet-Version: 4.0.30319
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: ASP.NET
+<?xml version="1.0" encoding="utf-8"?>
+<string xmlns="https://www.w3schools.com/xml/">132.8</string>
+
+16:03:19.962 [print] {
+  "Cache-Control": [
+    "private, max-age=0,public"
+  ],
+  "Content-Type": [
+    "text/xml; charset=utf-8"
+  ],
+  "Date": [
+    "Fri, 05 Feb 2021 10:25:10 GMT"
+  ],
+  "Server": [
+    "Microsoft-IIS/7.5"
+  ],
+  "Vary": [
+    "Accept-Encoding"
+  ],
+  "X-AspNet-Version": [
+    "4.0.30319"
+  ],
+  "X-Frame-Options": [
+    "SAMEORIGIN"
+  ],
+  "X-Powered-By": [
+    "ASP.NET"
+  ]
+}
+
+16:03:19.962 [print] xml
+16:03:19.962 [print] 309
+16:03:19.962 [print] <string xmlns="https://www.w3schools.com/xml/">132.8</string>
+
+16:03:19.962 after scenario inside config 
+16:03:19.962 From karate-config file 
+16:03:19.993 [print] Karate practice
+16:03:19.993 [print] Karate practice
+16:03:19.993 after scenario inside config 
+16:03:19.993 From karate-config file 
+16:03:20.253 [print] 101,Selenium,Se-HQ,
+102,UFT,Microfocus,
+103,RFT,IBM Rational,
+104,SilkTest,Microfocus,
+1111,TestComplete,SmartBear,
+106,Sasi,Sasi,
+106,Sasi,Sasi,
+106,Sasi,Sasi,
+
+16:03:20.255 after scenario inside config 
+16:03:20.258 From karate-config file 
+16:03:20.283 [print] -1
+16:03:20.286 assertion failed: assert evaluated to false: rowsAffected >= 1
+16:03:20.286 after scenario inside config 
+16:03:20.289 From karate-config file 
+16:03:20.329 [print] Inside
+16:03:20.329 [print] Inside
+16:03:20.329 after scenario inside config 
+16:03:20.426 From karate-config file 
+16:03:20.434 [print] Basic cGFsbWV0b2FkbWluOlBAbG1ldG9AMTIz
+16:03:20.444 request:
+1 > GET https://192.168.1.62:8089/services/alerts/alert_actions
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Basic cGFsbWV0b2FkbWluOlBAbG1ldG9AMTIz
+1 > Connection: Keep-Alive
+1 > Host: 192.168.1.62:8089
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+
+16:03:20.481 response time in milliseconds: 29.73
+1 < 200
+1 < Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+1 < Connection: Keep-Alive
+1 < Content-Type: text/xml; charset=UTF-8
+1 < Date: Fri, 05 Feb 2021 10:33:21 GMT
+1 < Expires: Thu, 26 Oct 1978 00:00:00 GMT
+1 < Server: Splunkd
+1 < Vary: Accept-Encoding, Cookie, Authorization
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This is to override browser formatting; see server.conf[httpServer] to disable. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .-->
+<?xml-stylesheet type="text/xml" href="/static/atom.xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:s="http://dev.splunk.com/ns/rest" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">
+  <title>alert_actions</title>
+  <id>https://192.168.1.62:8089/services/alerts/alert_actions</id>
+  <updated>2021-02-05T16:03:21+05:30</updated>
+  <generator build="08187535c166" version="8.1.1"/>
+  <author>
+    <name>Splunk</name>
+  </author>
+  <link href="/services/alerts/alert_actions/_reload" rel="_reload"/>
+  <link href="/services/alerts/alert_actions/_acl" rel="_acl"/>
+  <opensearch:totalResults>10</opensearch:totalResults>
+  <opensearch:itemsPerPage>30</opensearch:itemsPerPage>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <s:messages/>
+  <entry>
+    <title>email</title>
+    <id>https://192.168.1.62:8089/servicesNS/nobody/system/alerts/alert_actions/email</id>
+    <updated>1970-01-01T05:30:00+05:30</updated>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/email" rel="alternate"/>
+    <author>
+      <name>nobody</name>
+    </author>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/email" rel="list"/>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/email/_reload" rel="_reload"/>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/email" rel="edit"/>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/email/disable" rel="disable"/>
+    <content type="text/xml">
+      <s:dict>
+        <s:key name="allow_empty_attachment">1</s:key>
+        <s:key name="allowedDomainList"></s:key>
+        <s:key name="auth_password"></s:key>
+        <s:key name="auth_username"></s:key>
+        <s:key name="bcc"></s:key>
+        <s:key name="cc"></s:key>
+        <s:key name="cipherSuite">ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256</s:key>
+        <s:key name="command"><![CDATA[$action.email.preprocess_results{default=""}$ | sendemail "results_link=$results.url$" "ssname=$name$" "graceful=$graceful{default=True}$" "trigger_time=$trigger_time$" maxinputs="$action.email.maxresults{default=10000}$" maxtime="$action.email.maxtime{default=5m}$" results_file="$results.file$"]]></s:key>
+        <s:key name="content_type">html</s:key>
+        <s:key name="description">Send an email notification to specified recipients</s:key>
+        <s:key name="disabled">0</s:key>
+        <s:key name="eai:acl">
+          <s:dict>
+            <s:key name="app">system</s:key>
+            <s:key name="can_change_perms">1</s:key>
+            <s:key name="can_list">1</s:key>
+            <s:key name="can_share_app">1</s:key>
+            <s:key name="can_share_global">1</s:key>
+            <s:key name="can_share_user">0</s:key>
+            <s:key name="can_write">1</s:key>
+            <s:key name="modifiable">1</s:key>
+            <s:key name="owner">nobody</s:key>
+            <s:key name="perms">
+              <s:dict>
+                <s:key name="read">
+                  <s:list>
+                    <s:item>*</s:item>
+                  </s:list>
+                </s:key>
+                <s:key name="write">
+                  <s:list>
+                    <s:item>admin</s:item>
+                  </s:list>
+                </s:key>
+              </s:dict>
+            </s:key>
+            <s:key name="removable">0</s:key>
+            <s:key name="sharing">system</s:key>
+          </s:dict>
+        </s:key>
+        <s:key name="eai:appName">search</s:key>
+        <s:key name="eai:userName">nobody</s:key>
+        <s:key name="footer.text">If you believe you've received this email in error, please see your Splunk administrator.
+
+splunk &gt; the engine for machine data</s:key>
+        <s:key name="forceCsvResults">auto</s:key>
+        <s:key name="format">table</s:key>
+        <s:key name="from">splunk</s:key>
+        <s:key name="hostname"></s:key>
+        <s:key name="icon_path">mod_alert_icon_email.png</s:key>
+        <s:key name="include.results_link">1</s:key>
+        <s:key name="include.search">0</s:key>
+        <s:key name="include.trigger">0</s:key>
+        <s:key name="include.trigger_time">0</s:key>
+        <s:key name="include.view_link">1</s:key>
+        <s:key name="inline">0</s:key>
+        <s:key name="label">Send email</s:key>
+        <s:key name="mailserver">localhost</s:key>
+        <s:key name="maxresults">10000</s:key>
+        <s:key name="maxtime">5m</s:key>
+        <s:key name="message.alert">The alert condition for '$name$' was triggered.</s:key>
+        <s:key name="message.report">The scheduled report '$name$' has run.</s:key>
+        <s:key name="pdf.footer_center">title</s:key>
+        <s:key name="pdf.footer_enabled">1</s:key>
+        <s:key name="pdf.footer_left">logo</s:key>
+        <s:key name="pdf.footer_right">timestamp,pagination</s:key>
+        <s:key name="pdf.header_center">description</s:key>
+        <s:key name="pdf.header_enabled">1</s:key>
+        <s:key name="pdf.html_image_rendering">1</s:key>
+        <s:key name="pdfview"></s:key>
+        <s:key name="preprocess_results"></s:key>
+        <s:key name="priority">3</s:key>
+        <s:key name="reportCIDFontList">gb cns jp kor</s:key>
+        <s:key name="reportFileName">$name$-$time:%Y-%m-%d$</s:key>
+        <s:key name="reportIncludeSplunkLogo">1</s:key>
+        <s:key name="reportPaperOrientation">portrait</s:key>
+        <s:key name="reportPaperSize">letter</s:key>
+        <s:key name="sendcsv">0</s:key>
+        <s:key name="sendpdf">0</s:key>
+        <s:key name="sendresults">0</s:key>
+        <s:key name="sslVersions">tls1.2</s:key>
+        <s:key name="subject">Splunk Alert: $name$</s:key>
+        <s:key name="subject.alert">Splunk Alert: $name$</s:key>
+        <s:key name="subject.report">Splunk Report: $name$</s:key>
+        <s:key name="to"></s:key>
+        <s:key name="track_alert">1</s:key>
+        <s:key name="ttl">86400</s:key>
+        <s:key name="useNSSubject">0</s:key>
+        <s:key name="use_ssl">0</s:key>
+        <s:key name="use_tls">0</s:key>
+        <s:key name="width_sort_columns">1</s:key>
+      </s:dict>
+    </content>
+  </entry>
+  <entry>
+    <title>logevent</title>
+    <id>https://192.168.1.62:8089/servicesNS/nobody/alert_logevent/alerts/alert_actions/logevent</id>
+    <updated>1970-01-01T05:30:00+05:30</updated>
+    <link href="/servicesNS/nobody/alert_logevent/alerts/alert_actions/logevent" rel="alternate"/>
+    <author>
+      <name>nobody</name>
+    </author>
+    <link href="/servicesNS/nobody/alert_logevent/alerts/alert_actions/logevent" rel="list"/>
+    <link href="/servicesNS/nobody/alert_logevent/alerts/alert_actions/logevent/_reload" rel="_reload"/>
+    <link href="/servicesNS/nobody/alert_logevent/alerts/alert_actions/logevent" rel="edit"/>
+    <link href="/servicesNS/nobody/alert_logevent/alerts/alert_actions/logevent/disable" rel="disable"/>
+    <content type="text/xml">
+      <s:dict>
+        <s:key name="command">sendalert $action_name$ results_file="$results.file$" results_link="$results.url$"</s:key>
+        <s:key name="description">Send log event to Splunk receiver endpoint</s:key>
+        <s:key name="disabled">0</s:key>
+        <s:key name="eai:acl">
+          <s:dict>
+            <s:key name="app">alert_logevent</s:key>
+            <s:key name="can_change_perms">1</s:key>
+            <s:key name="can_list">1</s:key>
+            <s:key name="can_share_app">1</s:key>
+            <s:key name="can_share_global">1</s:key>
+            <s:key name="can_share_user">0</s:key>
+            <s:key name="can_write">1</s:key>
+            <s:key name="modifiable">1</s:key>
+            <s:key name="owner">nobody</s:key>
+            <s:key name="perms">
+              <s:dict>
+                <s:key name="read">
+                  <s:list>
+                    <s:item>*</s:item>
+                  </s:list>
+                </s:key>
+                <s:key name="write">
+                  <s:list>
+                    <s:item>*</s:item>
+                  </s:list>
+                </s:key>
+              </s:dict>
+            </s:key>
+            <s:key name="removable">0</s:key>
+            <s:key name="sharing">global</s:key>
+          </s:dict>
+        </s:key>
+        <s:key name="eai:appName">search</s:key>
+        <s:key name="eai:userName">nobody</s:key>
+        <s:key name="forceCsvResults">auto</s:key>
+        <s:key name="hostname"></s:key>
+        <s:key name="icon_path">logevent.png</s:key>
+        <s:key name="is_custom">1</s:key>
+        <s:key name="label">Log Event</s:key>
+        <s:key name="maxresults">10000</s:key>
+        <s:key name="maxtime">5m</s:key>
+        <s:key name="param.host"></s:key>
+        <s:key name="param.index">main</s:key>
+        <s:key name="param.source">alert:$name$</s:key>
+        <s:key name="param.sourcetype">generic_single_line</s:key>
+        <s:key name="payload_format">json</s:key>
+        <s:key name="python.version">python3</s:key>
+        <s:key name="track_alert">0</s:key>
+        <s:key name="ttl">10p</s:key>
+      </s:dict>
+    </content>
+  </entry>
+  <entry>
+    <title>lookup</title>
+    <id>https://192.168.1.62:8089/servicesNS/nobody/system/alerts/alert_actions/lookup</id>
+    <updated>1970-01-01T05:30:00+05:30</updated>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/lookup" rel="alternate"/>
+    <author>
+      <name>nobody</name>
+    </author>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/lookup" rel="list"/>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/lookup/_reload" rel="_reload"/>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/lookup" rel="edit"/>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/lookup/disable" rel="disable"/>
+    <content type="text/xml">
+      <s:dict>
+        <s:key name="append">0</s:key>
+        <s:key name="command">outputlookup "$action.lookup.filename$" append=$action.lookup.append$</s:key>
+        <s:key name="description">Output the results of the search to a CSV lookup file</s:key>
+        <s:key name="disabled">0</s:key>
+        <s:key name="eai:acl">
+          <s:dict>
+            <s:key name="app">system</s:key>
+            <s:key name="can_change_perms">1</s:key>
+            <s:key name="can_list">1</s:key>
+            <s:key name="can_share_app">1</s:key>
+            <s:key name="can_share_global">1</s:key>
+            <s:key name="can_share_user">0</s:key>
+            <s:key name="can_write">1</s:key>
+            <s:key name="modifiable">1</s:key>
+            <s:key name="owner">nobody</s:key>
+            <s:key name="perms">
+              <s:dict>
+                <s:key name="read">
+                  <s:list>
+                    <s:item>*</s:item>
+                  </s:list>
+                </s:key>
+                <s:key name="write">
+                  <s:list>
+                    <s:item>admin</s:item>
+                  </s:list>
+                </s:key>
+              </s:dict>
+            </s:key>
+            <s:key name="removable">0</s:key>
+            <s:key name="sharing">system</s:key>
+          </s:dict>
+        </s:key>
+        <s:key name="eai:appName">search</s:key>
+        <s:key name="eai:userName">nobody</s:key>
+        <s:key name="filename"></s:key>
+        <s:key name="forceCsvResults">auto</s:key>
+        <s:key name="hostname"></s:key>
+        <s:key name="icon_path">mod_alert_icon_lookup.png</s:key>
+        <s:key name="label">Output results to lookup</s:key>
+        <s:key name="maxresults">10000</s:key>
+        <s:key name="maxtime">5m</s:key>
+        <s:key name="track_alert">0</s:key>
+        <s:key name="ttl">10p</s:key>
+      </s:dict>
+    </content>
+  </entry>
+  <entry>
+    <title>outputtelemetry</title>
+    <id>https://192.168.1.62:8089/servicesNS/nobody/splunk_instrumentation/alerts/alert_actions/outputtelemetry</id>
+    <updated>1970-01-01T05:30:00+05:30</updated>
+    <link href="/servicesNS/nobody/splunk_instrumentation/alerts/alert_actions/outputtelemetry" rel="alternate"/>
+    <author>
+      <name>nobody</name>
+    </author>
+    <link href="/servicesNS/nobody/splunk_instrumentation/alerts/alert_actions/outputtelemetry" rel="list"/>
+    <link href="/servicesNS/nobody/splunk_instrumentation/alerts/alert_actions/outputtelemetry/_reload" rel="_reload"/>
+    <link href="/servicesNS/nobody/splunk_instrumentation/alerts/alert_actions/outputtelemetry" rel="edit"/>
+    <link href="/servicesNS/nobody/splunk_instrumentation/alerts/alert_actions/outputtelemetry/disable" rel="disable"/>
+    <content type="text/xml">
+      <s:dict>
+        <s:key name="command"><![CDATA[outputtelemetry input=$action.outputtelemetry.param.input$ anonymous=$action.outputtelemetry.param.anonymous$ license=$action.outputtelemetry.param.license$ support=$action.outputtelemetry.param.support$ component=$action.outputtelemetry.param.component$ type=$action.outputtelemetry.param.type$ optinrequired=$action.outputtelemetry.param.optinrequired$]]></s:key>
+        <s:key name="description">Custom action to output results to telemetry endpoint</s:key>
+        <s:key name="disabled">0</s:key>
+        <s:key name="eai:acl">
+          <s:dict>
+            <s:key name="app">splunk_instrumentation</s:key>
+            <s:key name="can_change_perms">1</s:key>
+            <s:key name="can_list">1</s:key>
+            <s:key name="can_share_app">1</s:key>
+            <s:key name="can_share_global">1</s:key>
+            <s:key name="can_share_user">0</s:key>
+            <s:key name="can_write">1</s:key>
+            <s:key name="modifiable">1</s:key>
+            <s:key name="owner">nobody</s:key>
+            <s:key name="perms">
+              <s:dict>
+                <s:key name="read">
+                  <s:list>
+                    <s:item>*</s:item>
+                  </s:list>
+                </s:key>
+                <s:key name="write">
+                  <s:list>
+                    <s:item>admin</s:item>
+                  </s:list>
+                </s:key>
+              </s:dict>
+            </s:key>
+            <s:key name="removable">0</s:key>
+            <s:key name="sharing">global</s:key>
+          </s:dict>
+        </s:key>
+        <s:key name="eai:appName">search</s:key>
+        <s:key name="eai:userName">nobody</s:key>
+        <s:key name="forceCsvResults">auto</s:key>
+        <s:key name="hostname"></s:key>
+        <s:key name="icon_path">outputtelemetry.png</s:key>
+        <s:key name="is_custom">1</s:key>
+        <s:key name="label">Output results to telemetry endpoint</s:key>
+        <s:key name="maxresults">10000</s:key>
+        <s:key name="maxtime">5m</s:key>
+        <s:key name="param.anonymous">1</s:key>
+        <s:key name="param.component"></s:key>
+        <s:key name="param.input"></s:key>
+        <s:key name="param.license">0</s:key>
+        <s:key name="param.optinrequired">1</s:key>
+        <s:key name="param.support">1</s:key>
+        <s:key name="param.type">event</s:key>
+        <s:key name="python.version">python3</s:key>
+        <s:key name="track_alert">0</s:key>
+        <s:key name="ttl">120</s:key>
+      </s:dict>
+    </content>
+  </entry>
+  <entry>
+    <title>populate_lookup</title>
+    <id>https://192.168.1.62:8089/servicesNS/nobody/system/alerts/alert_actions/populate_lookup</id>
+    <updated>1970-01-01T05:30:00+05:30</updated>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/populate_lookup" rel="alternate"/>
+    <author>
+      <name>nobody</name>
+    </author>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/populate_lookup" rel="list"/>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/populate_lookup/_reload" rel="_reload"/>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/populate_lookup" rel="edit"/>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/populate_lookup/disable" rel="disable"/>
+    <content type="text/xml">
+      <s:dict>
+        <s:key name="command">copyresults dest="$action.populate_lookup.dest$"  sid="$search_id$"</s:key>
+        <s:key name="dest"></s:key>
+        <s:key name="disabled">0</s:key>
+        <s:key name="eai:acl">
+          <s:dict>
+            <s:key name="app">system</s:key>
+            <s:key name="can_change_perms">1</s:key>
+            <s:key name="can_list">1</s:key>
+            <s:key name="can_share_app">1</s:key>
+            <s:key name="can_share_global">1</s:key>
+            <s:key name="can_share_user">0</s:key>
+            <s:key name="can_write">1</s:key>
+            <s:key name="modifiable">1</s:key>
+            <s:key name="owner">nobody</s:key>
+            <s:key name="perms">
+              <s:dict>
+                <s:key name="read">
+                  <s:list>
+                    <s:item>*</s:item>
+                  </s:list>
+                </s:key>
+                <s:key name="write">
+                  <s:list>
+                    <s:item>admin</s:item>
+                  </s:list>
+                </s:key>
+              </s:dict>
+            </s:key>
+            <s:key name="removable">0</s:key>
+            <s:key name="sharing">system</s:key>
+          </s:dict>
+        </s:key>
+        <s:key name="eai:appName">search</s:key>
+        <s:key name="eai:userName">nobody</s:key>
+        <s:key name="forceCsvResults">auto</s:key>
+        <s:key name="hostname"></s:key>
+        <s:key name="maxresults">10000</s:key>
+        <s:key name="maxtime">5m</s:key>
+        <s:key name="track_alert">0</s:key>
+        <s:key name="ttl">120</s:key>
+      </s:dict>
+    </content>
+  </entry>
+  <entry>
+    <title>rss</title>
+    <id>https://192.168.1.62:8089/servicesNS/nobody/system/alerts/alert_actions/rss</id>
+    <updated>1970-01-01T05:30:00+05:30</updated>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/rss" rel="alternate"/>
+    <author>
+      <name>nobody</name>
+    </author>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/rss" rel="list"/>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/rss/_reload" rel="_reload"/>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/rss" rel="edit"/>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/rss/disable" rel="disable"/>
+    <content type="text/xml">
+      <s:dict>
+        <s:key name="command">createrss "path=$name$.xml" "name=$name$" "link=$results.url$" "descr=Alert trigger: $name$, results.count=$results.count$ " "count=30" "graceful=$graceful{default=1}$" maxtime="$action.rss.maxtime{default=1m}$"</s:key>
+        <s:key name="disabled">0</s:key>
+        <s:key name="eai:acl">
+          <s:dict>
+            <s:key name="app">system</s:key>
+            <s:key name="can_change_perms">1</s:key>
+            <s:key name="can_list">1</s:key>
+            <s:key name="can_share_app">1</s:key>
+            <s:key name="can_share_global">1</s:key>
+            <s:key name="can_share_user">0</s:key>
+            <s:key name="can_write">1</s:key>
+            <s:key name="modifiable">1</s:key>
+            <s:key name="owner">nobody</s:key>
+            <s:key name="perms">
+              <s:dict>
+                <s:key name="read">
+                  <s:list>
+                    <s:item>*</s:item>
+                  </s:list>
+                </s:key>
+                <s:key name="write">
+                  <s:list>
+                    <s:item>admin</s:item>
+                  </s:list>
+                </s:key>
+              </s:dict>
+            </s:key>
+            <s:key name="removable">0</s:key>
+            <s:key name="sharing">system</s:key>
+          </s:dict>
+        </s:key>
+        <s:key name="eai:appName">search</s:key>
+        <s:key name="eai:userName">nobody</s:key>
+        <s:key name="forceCsvResults">auto</s:key>
+        <s:key name="hostname"></s:key>
+        <s:key name="maxresults">10000</s:key>
+        <s:key name="maxtime">1m</s:key>
+        <s:key name="track_alert">0</s:key>
+        <s:key name="ttl">86400</s:key>
+      </s:dict>
+    </content>
+  </entry>
+  <entry>
+    <title>script</title>
+    <id>https://192.168.1.62:8089/servicesNS/nobody/system/alerts/alert_actions/script</id>
+    <updated>1970-01-01T05:30:00+05:30</updated>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/script" rel="alternate"/>
+    <author>
+      <name>nobody</name>
+    </author>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/script" rel="list"/>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/script/_reload" rel="_reload"/>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/script" rel="edit"/>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/script/disable" rel="disable"/>
+    <content type="text/xml">
+      <s:dict>
+        <s:key name="command">runshellscript "$action.script.filename$" "$results.count$" "$search$" "$search$" "$name$" "Saved Search [$name$] $counttype$($results.count$)" "$results.url$" "$deprecated_arg$" "$search_id$" "$results.file$" maxtime="$action.script.maxtime{default=5m}$"</s:key>
+        <s:key name="description">Invoke a custom script</s:key>
+        <s:key name="disabled">0</s:key>
+        <s:key name="eai:acl">
+          <s:dict>
+            <s:key name="app">system</s:key>
+            <s:key name="can_change_perms">1</s:key>
+            <s:key name="can_list">1</s:key>
+            <s:key name="can_share_app">1</s:key>
+            <s:key name="can_share_global">1</s:key>
+            <s:key name="can_share_user">0</s:key>
+            <s:key name="can_write">1</s:key>
+            <s:key name="modifiable">1</s:key>
+            <s:key name="owner">nobody</s:key>
+            <s:key name="perms">
+              <s:dict>
+                <s:key name="read">
+                  <s:list>
+                    <s:item>*</s:item>
+                  </s:list>
+                </s:key>
+                <s:key name="write">
+                  <s:list>
+                    <s:item>admin</s:item>
+                  </s:list>
+                </s:key>
+              </s:dict>
+            </s:key>
+            <s:key name="removable">0</s:key>
+            <s:key name="sharing">system</s:key>
+          </s:dict>
+        </s:key>
+        <s:key name="eai:appName">search</s:key>
+        <s:key name="eai:userName">nobody</s:key>
+        <s:key name="filename"></s:key>
+        <s:key name="forceCsvResults">auto</s:key>
+        <s:key name="hostname"></s:key>
+        <s:key name="icon_path">mod_alert_icon_script.png</s:key>
+        <s:key name="label">Run a script</s:key>
+        <s:key name="maxresults">10000</s:key>
+        <s:key name="maxtime">5m</s:key>
+        <s:key name="track_alert">1</s:key>
+        <s:key name="ttl">600</s:key>
+      </s:dict>
+    </content>
+  </entry>
+  <entry>
+    <title>summary_index</title>
+    <id>https://192.168.1.62:8089/servicesNS/nobody/system/alerts/alert_actions/summary_index</id>
+    <updated>1970-01-01T05:30:00+05:30</updated>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/summary_index" rel="alternate"/>
+    <author>
+      <name>nobody</name>
+    </author>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/summary_index" rel="list"/>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/summary_index/_reload" rel="_reload"/>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/summary_index" rel="edit"/>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/summary_index/disable" rel="disable"/>
+    <content type="text/xml">
+      <s:dict>
+        <s:key name="_name">summary</s:key>
+        <s:key name="command"><![CDATA[summaryindex spool=t uselb=t addtime=t index="$action.summary_index._name{required=yes}$" file="$name_hash$_$#random$.stash_new" name="$name$" marker="$action.summary_index*{format=$KEY=\\\"$VAL\\\", key_regex="action.summary_index.(?!(?:command|forceCsvResults|force_realtime_schedule|inline|maxresults|maxtime|python\\.version|ttl|track_alert|(?:_.*))$)(.*)"}$"]]></s:key>
+        <s:key name="disabled">0</s:key>
+        <s:key name="eai:acl">
+          <s:dict>
+            <s:key name="app">system</s:key>
+            <s:key name="can_change_perms">1</s:key>
+            <s:key name="can_list">1</s:key>
+            <s:key name="can_share_app">1</s:key>
+            <s:key name="can_share_global">1</s:key>
+            <s:key name="can_share_user">0</s:key>
+            <s:key name="can_write">1</s:key>
+            <s:key name="modifiable">1</s:key>
+            <s:key name="owner">nobody</s:key>
+            <s:key name="perms">
+              <s:dict>
+                <s:key name="read">
+                  <s:list>
+                    <s:item>*</s:item>
+                  </s:list>
+                </s:key>
+                <s:key name="write">
+                  <s:list>
+                    <s:item>admin</s:item>
+                  </s:list>
+                </s:key>
+              </s:dict>
+            </s:key>
+            <s:key name="removable">0</s:key>
+            <s:key name="sharing">system</s:key>
+          </s:dict>
+        </s:key>
+        <s:key name="eai:appName">search</s:key>
+        <s:key name="eai:userName">nobody</s:key>
+        <s:key name="forceCsvResults">auto</s:key>
+        <s:key name="hostname"></s:key>
+        <s:key name="inline">1</s:key>
+        <s:key name="maxresults">10000</s:key>
+        <s:key name="maxtime">5m</s:key>
+        <s:key name="track_alert">0</s:key>
+        <s:key name="ttl">120</s:key>
+      </s:dict>
+    </content>
+  </entry>
+  <entry>
+    <title>summary_metric_index</title>
+    <id>https://192.168.1.62:8089/servicesNS/nobody/system/alerts/alert_actions/summary_metric_index</id>
+    <updated>1970-01-01T05:30:00+05:30</updated>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/summary_metric_index" rel="alternate"/>
+    <author>
+      <name>nobody</name>
+    </author>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/summary_metric_index" rel="list"/>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/summary_metric_index/_reload" rel="_reload"/>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/summary_metric_index" rel="edit"/>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/summary_metric_index/disable" rel="disable"/>
+    <content type="text/xml">
+      <s:dict>
+        <s:key name="_name">summary</s:key>
+        <s:key name="command"><![CDATA[mcollect spool=t index="$action.summary_index._name{required=yes}$" file="$name_hash$_$#random$.stash_new" name="$name$" marker="$action.summary_index*{format=$KEY=\\\"$VAL\\\", key_regex="action.summary_index.(?!(?:command|forceCsvResults|force_realtime_schedule|inline|maxresults|maxtime|python\\.version|ttl|track_alert|(?:_.*))$)(.*)"}$" split=allnums $action.summary_index._metric_dims$]]></s:key>
+        <s:key name="disabled">0</s:key>
+        <s:key name="eai:acl">
+          <s:dict>
+            <s:key name="app">system</s:key>
+            <s:key name="can_change_perms">1</s:key>
+            <s:key name="can_list">1</s:key>
+            <s:key name="can_share_app">1</s:key>
+            <s:key name="can_share_global">1</s:key>
+            <s:key name="can_share_user">0</s:key>
+            <s:key name="can_write">1</s:key>
+            <s:key name="modifiable">1</s:key>
+            <s:key name="owner">nobody</s:key>
+            <s:key name="perms">
+              <s:dict>
+                <s:key name="read">
+                  <s:list>
+                    <s:item>*</s:item>
+                  </s:list>
+                </s:key>
+                <s:key name="write">
+                  <s:list>
+                    <s:item>admin</s:item>
+                  </s:list>
+                </s:key>
+              </s:dict>
+            </s:key>
+            <s:key name="removable">0</s:key>
+            <s:key name="sharing">system</s:key>
+          </s:dict>
+        </s:key>
+        <s:key name="eai:appName">search</s:key>
+        <s:key name="eai:userName">nobody</s:key>
+        <s:key name="forceCsvResults">auto</s:key>
+        <s:key name="hostname"></s:key>
+        <s:key name="inline">1</s:key>
+        <s:key name="maxresults">10000</s:key>
+        <s:key name="maxtime">5m</s:key>
+        <s:key name="track_alert">0</s:key>
+        <s:key name="ttl">120</s:key>
+      </s:dict>
+    </content>
+  </entry>
+  <entry>
+    <title>webhook</title>
+    <id>https://192.168.1.62:8089/servicesNS/nobody/alert_webhook/alerts/alert_actions/webhook</id>
+    <updated>1970-01-01T05:30:00+05:30</updated>
+    <link href="/servicesNS/nobody/alert_webhook/alerts/alert_actions/webhook" rel="alternate"/>
+    <author>
+      <name>nobody</name>
+    </author>
+    <link href="/servicesNS/nobody/alert_webhook/alerts/alert_actions/webhook" rel="list"/>
+    <link href="/servicesNS/nobody/alert_webhook/alerts/alert_actions/webhook/_reload" rel="_reload"/>
+    <link href="/servicesNS/nobody/alert_webhook/alerts/alert_actions/webhook" rel="edit"/>
+    <link href="/servicesNS/nobody/alert_webhook/alerts/alert_actions/webhook/disable" rel="disable"/>
+    <content type="text/xml">
+      <s:dict>
+        <s:key name="command">sendalert $action_name$ results_file="$results.file$" results_link="$results.url$"</s:key>
+        <s:key name="description">Generic HTTP POST to a specified URL</s:key>
+        <s:key name="disabled">0</s:key>
+        <s:key name="eai:acl">
+          <s:dict>
+            <s:key name="app">alert_webhook</s:key>
+            <s:key name="can_change_perms">1</s:key>
+            <s:key name="can_list">1</s:key>
+            <s:key name="can_share_app">1</s:key>
+            <s:key name="can_share_global">1</s:key>
+            <s:key name="can_share_user">0</s:key>
+            <s:key name="can_write">1</s:key>
+            <s:key name="modifiable">1</s:key>
+            <s:key name="owner">nobody</s:key>
+            <s:key name="perms">
+              <s:dict>
+                <s:key name="read">
+                  <s:list>
+                    <s:item>*</s:item>
+                  </s:list>
+                </s:key>
+                <s:key name="write">
+                  <s:list>
+                    <s:item>*</s:item>
+                  </s:list>
+                </s:key>
+              </s:dict>
+            </s:key>
+            <s:key name="removable">0</s:key>
+            <s:key name="sharing">global</s:key>
+          </s:dict>
+        </s:key>
+        <s:key name="eai:appName">search</s:key>
+        <s:key name="eai:userName">nobody</s:key>
+        <s:key name="forceCsvResults">auto</s:key>
+        <s:key name="hostname"></s:key>
+        <s:key name="icon_path">webhook.png</s:key>
+        <s:key name="is_custom">1</s:key>
+        <s:key name="label">Webhook</s:key>
+        <s:key name="maxresults">10000</s:key>
+        <s:key name="maxtime">5m</s:key>
+        <s:key name="param.user_agent">Splunk/$server.guid$</s:key>
+        <s:key name="payload_format">json</s:key>
+        <s:key name="python.version">python3</s:key>
+        <s:key name="track_alert">0</s:key>
+        <s:key name="ttl">10p</s:key>
+      </s:dict>
+    </content>
+  </entry>
+</feed>
+
+
+16:03:20.545 [print] xml
+16:03:20.653 [print] xml
+16:03:20.669 [print] alert_actions
+16:03:20.675 after scenario inside config 
+16:03:20.680 From karate-config file 
+16:03:20.688 [print] {
+  "per_page": 6,
+  "total": 12,
+  "data": [
+    {
+      "last_name": "Lawson",
+      "id": 7,
+      "avatar": "https://reqres.in/img/faces/7-image.jpg",
+      "first_name": "Michael",
+      "email": "michael.lawson@reqres.in"
+    },
+    {
+      "last_name": "Ferguson",
+      "id": 8,
+      "avatar": "https://reqres.in/img/faces/8-image.jpg",
+      "first_name": "Lindsay",
+      "email": "lindsay.ferguson@reqres.in"
+    },
+    {
+      "last_name": "Funke",
+      "id": 9,
+      "avatar": "https://reqres.in/img/faces/9-image.jpg",
+      "first_name": "Tobias",
+      "email": "tobias.funke@reqres.in"
+    },
+    {
+      "last_name": "Fields",
+      "id": 10,
+      "avatar": "https://reqres.in/img/faces/10-image.jpg",
+      "first_name": "Byron",
+      "email": "byron.fields@reqres.in"
+    },
+    {
+      "last_name": "Edwards",
+      "id": 11,
+      "avatar": "https://reqres.in/img/faces/11-image.jpg",
+      "first_name": "George",
+      "email": "george.edwards@reqres.in"
+    },
+    {
+      "last_name": "Howell",
+      "id": 12,
+      "avatar": "https://reqres.in/img/faces/12-image.jpg",
+      "first_name": "Rachel",
+      "email": "rachel.howell@reqres.in"
+    }
+  ],
+  "page": 2,
+  "total_pages": 2,
+  "support": {
+    "text": "To keep ReqRes free, contributions towards server costs are appreciated!",
+    "url": "https://reqres.in/#support-heading"
+  }
+}
+
+16:03:20.688 after scenario inside config 
+16:03:20.731 From karate-config file 
+16:03:20.745 request:
+1 > GET http://192.168.1.62:8082/topics
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 192.168.1.62:8082
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+
+16:03:20.753 response time in milliseconds: 8.04
+1 < 200
+1 < Content-Type: application/vnd.kafka.v2+json
+1 < Date: Fri, 05 Feb 2021 10:33:21 GMT
+1 < Vary: Accept-Encoding, User-Agent
+["harris_topic3","pravalika_topic","shubh","topic3","vijay_topic","shalini","dhana_topic","manohar","veera_topic","_confluent_balancer_partition_samples","satyendra_topic","snehasish_topic","sasi","hemanth_topic","_confluent_balancer_api_state","Madhu-topic","_confluent-license","deekshit","_confluent_balancer_broker_samples","syed_topic","_confluent-telemetry-metrics"]
+
+16:03:20.754 [print] [
+  "harris_topic3",
+  "pravalika_topic",
+  "shubh",
+  "topic3",
+  "vijay_topic",
+  "shalini",
+  "dhana_topic",
+  "manohar",
+  "veera_topic",
+  "_confluent_balancer_partition_samples",
+  "satyendra_topic",
+  "snehasish_topic",
+  "sasi",
+  "hemanth_topic",
+  "_confluent_balancer_api_state",
+  "Madhu-topic",
+  "_confluent-license",
+  "deekshit",
+  "_confluent_balancer_broker_samples",
+  "syed_topic",
+  "_confluent-telemetry-metrics"
+]
+
+16:03:20.757 assertion failed: path: $[1], actual: 'pravalika_topic', expected: 'confluent', reason: not a sub-string
+16:03:20.757 after scenario inside config 
+16:03:20.761 From karate-config file 
+16:03:20.765 request:
+1 > GET http://192.168.1.62:8082/topics/rest123
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 192.168.1.62:8082
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+
+16:03:20.772 response time in milliseconds: 6.84
+1 < 404
+1 < Content-Length: 80
+1 < Content-Type: application/vnd.kafka.v2+json
+1 < Date: Fri, 05 Feb 2021 10:33:21 GMT
+{"error_code":40403,"message":"This server does not host this topic-partition."}
+
+16:03:20.773 [print] {
+  "error_code": 40403,
+  "message": "This server does not host this topic-partition."
+}
+
+16:03:20.776 after scenario inside config 
+16:03:20.779 From karate-config file 
+16:03:20.793 request:
+1 > POST http://192.168.1.62:8082/topics/harris_topic3
+1 > Accept: application/vnd.kafka.v2+json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 94
+1 > Content-Type: application/vnd.kafka.json.v2+json; charset=UTF-8
+1 > Host: 192.168.1.62:8082
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+{"records":[{"key":"key3","value":"practice"},{"value":"val3","partition":0},{"value":123.3}]}
+
+16:03:20.807 response time in milliseconds: 13.76
+1 < 200
+1 < Content-Type: application/vnd.kafka.v2+json
+1 < Date: Fri, 05 Feb 2021 10:33:21 GMT
+1 < Vary: Accept-Encoding, User-Agent
+{"offsets":[{"partition":0,"offset":18,"error_code":null,"error":null},{"partition":0,"offset":19,"error_code":null,"error":null},{"partition":0,"offset":20,"error_code":null,"error":null}],"key_schema_id":null,"value_schema_id":null}
+
+16:03:20.807 [print] {
+  "offsets": [
+    {
+      "partition": 0,
+      "offset": 18,
+      "error_code": null,
+      "error": null
+    },
+    {
+      "partition": 0,
+      "offset": 19,
+      "error_code": null,
+      "error": null
+    },
+    {
+      "partition": 0,
+      "offset": 20,
+      "error_code": null,
+      "error": null
+    }
+  ],
+  "value_schema_id": null,
+  "key_schema_id": null
+}
+
+16:03:20.809 after scenario inside config 
+16:03:20.823 From karate-config file 
+16:03:20.826 request:
+1 > POST http://192.168.1.62:8082/consumers/my-consumer-group
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 100
+1 > Content-Type: application/vnd.kafka.json.v2+json; charset=UTF-8
+1 > Host: 192.168.1.62:8082
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+{"name":"hari_consumer","format":"json","auto.offset.reset":"earliest","auto.commit.enable":"false"}
+
+16:03:20.840 response time in milliseconds: 13.76
+1 < 200
+1 < Content-Type: application/vnd.kafka.v2+json
+1 < Date: Fri, 05 Feb 2021 10:33:21 GMT
+1 < Vary: Accept-Encoding, User-Agent
+{"instance_id":"hari_consumer","base_uri":"http://192.168.1.62:8082/consumers/my-consumer-group/instances/hari_consumer"}
+
+16:03:20.841 [print] {
+  "instance_id": "hari_consumer",
+  "base_uri": "http://192.168.1.62:8082/consumers/my-consumer-group/instances/hari_consumer"
+}
+
+16:03:20.848 [print] http://192.168.1.62:8082/consumers/my-consumer-group/instances/hari_consumer
+16:03:20.849 after scenario inside config 
+16:03:20.851 From karate-config file 
+16:03:20.859 request:
+1 > POST http://192.168.1.62:8082/consumers/my-consumer-group/instances/hari_consumer/subscription
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 28
+1 > Content-Type: application/vnd.kafka.v2+json; charset=UTF-8
+1 > Host: 192.168.1.62:8082
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+{"topics":["harris_topic3"]}
+
+16:03:20.865 response time in milliseconds: 6.22
+1 < 204
+1 < Date: Fri, 05 Feb 2021 10:33:21 GMT
+
+16:03:20.866 after scenario inside config 
+16:03:20.869 From karate-config file 
+16:03:20.870 request:
+1 > GET http://192.168.1.62:8082/consumers/my-consumer-group/instances/hari_consumer/subscription
+1 > Accept: application/vnd.kafka.v2+json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 192.168.1.62:8082
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+
+16:03:20.874 response time in milliseconds: 3.26
+1 < 200
+1 < Content-Length: 28
+1 < Content-Type: application/vnd.kafka.v2+json
+1 < Date: Fri, 05 Feb 2021 10:33:21 GMT
+1 < Vary: Accept-Encoding, User-Agent
+{"topics":["harris_topic3"]}
+
+16:03:20.874 [print] {
+  "topics": [
+    "harris_topic3"
+  ]
+}
+
+16:03:20.877 after scenario inside config 
+16:03:20.880 From karate-config file 
+16:03:20.881 request:
+1 > GET https://reqres.in/api/users%3Fpage=2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+
+16:03:21.040 response time in milliseconds: 157.84
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 7136
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 61cbf905f9f9d9a0-SIN
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Fri, 05 Feb 2021 10:33:21 GMT
+1 < Etag: W/"2c1-N6Rqerxquq2kgQhL51EiSg4x0R8"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"max_age":604800,"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=IcTP27HrOkE7sZ7%2Bmex3ExBKM35APouQega7h%2BeiLM703tmDdjDqUn1gvhBcEcXVKzftpYcO4H7xo5WxQ1Zos5KNwWZ5MeP%2BZEs%3D"}],"group":"cf-nel"}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d0163f4a8b4c9aa38493b5c2e6451e87e1612521201; expires=Sun, 07-Mar-21 10:33:21 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 081359f7c00000d9a0fc2e9000000001
+{"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"name":"cerulean","year":2000,"color":"#98B2D1","pantone_value":"15-4020"},{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},{"id":3,"name":"true red","year":2002,"color":"#BF1932","pantone_value":"19-1664"},{"id":4,"name":"aqua sky","year":2003,"color":"#7BC4C4","pantone_value":"14-4811"},{"id":5,"name":"tigerlily","year":2004,"color":"#E2583E","pantone_value":"17-1456"},{"id":6,"name":"blue turquoise","year":2005,"color":"#53B0AE","pantone_value":"15-5217"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+16:03:21.041 [print] {
+  "per_page": 6,
+  "total": 12,
+  "data": [
+    {
+      "color": "#98B2D1",
+      "year": 2000,
+      "name": "cerulean",
+      "id": 1,
+      "pantone_value": "15-4020"
+    },
+    {
+      "color": "#C74375",
+      "year": 2001,
+      "name": "fuchsia rose",
+      "id": 2,
+      "pantone_value": "17-2031"
+    },
+    {
+      "color": "#BF1932",
+      "year": 2002,
+      "name": "true red",
+      "id": 3,
+      "pantone_value": "19-1664"
+    },
+    {
+      "color": "#7BC4C4",
+      "year": 2003,
+      "name": "aqua sky",
+      "id": 4,
+      "pantone_value": "14-4811"
+    },
+    {
+      "color": "#E2583E",
+      "year": 2004,
+      "name": "tigerlily",
+      "id": 5,
+      "pantone_value": "17-1456"
+    },
+    {
+      "color": "#53B0AE",
+      "year": 2005,
+      "name": "blue turquoise",
+      "id": 6,
+      "pantone_value": "15-5217"
+    }
+  ],
+  "page": 1,
+  "total_pages": 2,
+  "support": {
+    "text": "To keep ReqRes free, contributions towards server costs are appreciated!",
+    "url": "https://reqres.in/#support-heading"
+  }
+}
+
+16:03:21.042 after scenario inside config 
+16:03:21.046 From karate-config file 
+16:03:21.049 [print] from background block
+16:03:21.055 [print] from scenario block
+16:03:21.059 from after scenario 
+16:03:21.062 From karate-config file 
+16:03:21.067 request:
+1 > GET http://192.168.1.62:8082/consumers/my-consumer-group/instances/hari_consumer/assignments
+1 > Accept: application/vnd.kafka.v2+json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 192.168.1.62:8082
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+
+16:03:21.072 response time in milliseconds: 4.55
+1 < 200
+1 < Content-Type: application/vnd.kafka.v2+json
+1 < Date: Fri, 05 Feb 2021 10:33:21 GMT
+1 < Vary: Accept-Encoding, User-Agent
+{"partitions":[{"topic":"harris_topic3","partition":0}]}
+
+16:03:21.073 [print] {
+  "partitions": [
+    {
+      "partition": 0,
+      "topic": "harris_topic3"
+    }
+  ]
+}
+
+16:03:21.073 from after feature 
+16:03:21.080 after scenario inside config 
+16:03:21.083 From karate-config file 
+16:03:21.085 request:
+1 > DELETE http://192.168.1.62:8082/consumers/my-consumer-group/instances/hari_consumer/subscription
+1 > Accept: application/vnd.kafka.v2+json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 192.168.1.62:8082
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+
+16:03:21.090 response time in milliseconds: 4.92
+1 < 204
+1 < Date: Fri, 05 Feb 2021 10:33:21 GMT
+
+16:03:21.091 after scenario inside config 
+16:03:21.093 From karate-config file 
+16:03:21.096 request:
+1 > DELETE http://192.168.1.62:8082/consumers/my-consumer-group/instances/hari_consumer
+1 > Accept: application/vnd.kafka.v2+json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 192.168.1.62:8082
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+
+16:03:21.102 response time in milliseconds: 5.77
+1 < 204
+1 < Date: Fri, 05 Feb 2021 10:33:21 GMT
+
+16:03:21.102 after scenario inside config 
+16:03:21.104 From karate-config file 
+16:03:21.106 request:
+1 > DELETE http://192.168.1.62:8082/consumers/my-consumer-group/instances/hari_consumer
+1 > Accept: application/vnd.kafka.v2+json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 192.168.1.62:8082
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+
+16:03:21.111 response time in milliseconds: 5.25
+1 < 404
+1 < Content-Length: 61
+1 < Content-Type: application/vnd.kafka.v2+json
+1 < Date: Fri, 05 Feb 2021 10:33:21 GMT
+{"error_code":40403,"message":"Consumer instance not found."}
+
+16:03:21.113 after scenario inside config 
+16:03:21.116 From karate-config file 
+16:03:21.116 [print] {
+  "id": "101",
+  "tool": {
+    "name": "Karate",
+    "version": "0.9.6"
+  }
+}
+
+16:03:21.140 [print] 101
+16:03:21.142 [print] Karate
+16:03:21.142 after scenario inside config 
+16:03:21.156 From karate-config file 
+16:03:21.159 after scenario inside config 
+16:03:21.206 From karate-config file 
+16:03:21.208 [print] <info>
+  <id>101</id>
+  <tool>
+    <name>Karate</name>
+    <version>0.9.6</version>
+  </tool>
+</info>
+
+16:03:21.213 [print]
+16:03:21.215 [print] 101
+16:03:21.218 [print] Karate
+16:03:21.218 after scenario inside config 
+16:03:21.233 From karate-config file 
+16:03:21.238 [print] end of match
+16:03:21.238 after scenario inside config 

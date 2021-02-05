@@ -1,0 +1,15 @@
+<testsuite failures="0" name="src/test/java/featurefile/karate09.feature" skipped="0" tests="1" time="0.03682">
+  <testcase classname="src.test.java.featurefile.karate09" name="Regular expression validation TestCase1" time="0.03682">
+    <system-out>* def a = "52" ............................................................ passed
+* def b = "Karate" ........................................................ passed
+* def c = "Kar ate Fram ework " ........................................... passed
+* def d = "344Kar ate Fram ework635 " ..................................... passed
+* match a == "#regex [0-9]+" .............................................. passed
+* match a == "#regex \\d+" ................................................ passed
+* match b == "#regex \\w+" ................................................ passed
+* match b == "#regex [A-Z][a-z]+" ......................................... passed
+* match c == "#regex [A-Za-z\\s]+" ........................................ passed
+* match d == "#regex (\\w+\\s?)+" ......................................... passed
+* print "After data type validation" ...................................... passed</system-out>
+  </testcase>
+</testsuite>

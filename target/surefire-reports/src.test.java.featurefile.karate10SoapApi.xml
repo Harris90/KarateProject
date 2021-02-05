@@ -1,0 +1,25 @@
+<testsuite failures="1" name="src/test/java/featurefile/karate10SoapApi.feature" skipped="0" tests="1" time="0.920773">
+  <testcase classname="src.test.java.featurefile.karate10SoapApi" name="soap api TestCase1" time="0.920773">
+    <failure message="karate10SoapApi.feature:18 - path: , actual: '&lt;soap:Envelope xmlns:soap=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&lt;soap:Body&gt;&lt;CelsiusToFahrenheitResponse xmlns=&quot;https://www.w3schools.com/xml/&quot;&gt;&lt;CelsiusToFahrenheitResult&gt;96.8&lt;/CelsiusToFahrenheitResult&gt;&lt;/CelsiusToFahrenheitResponse&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;', expected: '98.8', reason: not a sub-string">Given url "https://www.w3schools.com/xml/tempconvert.asmx" ................ passed
+And header Content-Type = "text/xml; charset=utf-8" ....................... passed
+And request read ("classpath:soapinputdata.xml") .......................... passed
+When soap action "https://www.w3schools.com/xml/CelsiusToFahrenheit" ...... passed
+Then status 200 ........................................................... passed
+* print responseHeaders ................................................... passed
+* print responseHeaders["Server"] ......................................... passed
+* print responseHeaders["Server"][0] ...................................... passed
+* match responseHeaders["Server"] == ["Microsoft-IIS/7.5"] ................ passed
+* print responseType ...................................................... passed
+* match responseType == "xml" ............................................. passed
+* print response .......................................................... passed
+* match response contains "98.8" .......................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karate10SoapApi.feature:18 - path: , actual: '&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&lt;soap:Body&gt;&lt;CelsiusToFahrenheitResponse xmlns="https://www.w3schools.com/xml/"&gt;&lt;CelsiusToFahrenheitResult&gt;96.8&lt;/CelsiusToFahrenheitResult&gt;&lt;/CelsiusToFahrenheitResponse&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;', expected: '98.8', reason: not a sub-string&#13;
+	at ✽.* match response contains "98.8" (karate10SoapApi.feature:18)&#13;
+
+* print responseTime ...................................................... skipped
+* assert responseTime &lt;= 2000 ............................................. skipped
+* match response //CelsiusToFahrenheitResult == 98.8 ...................... skipped</failure>
+  </testcase>
+</testsuite>

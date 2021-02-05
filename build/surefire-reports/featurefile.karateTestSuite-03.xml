@@ -1,0 +1,119 @@
+<testsuite failures="2" name="featurefile/karateTestSuite-03.feature" skipped="0" tests="6" time="0.025301">
+  <testcase classname="featurefile.karateTestSuite-03" name="XML test case 1" time="0.008792">
+    <system-out>Given def xml = &lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt; . passed
+* print xml ............................................................... passed
+* print xml/info/id ....................................................... passed
+* print xml.info.id ....................................................... passed
+* print xml.info.tool.name ................................................ passed</system-out>
+  </testcase>
+  <testcase classname="featurefile.karateTestSuite-03" name="XML test case 2" time="0.001961">
+    <system-out>Given def xml = &lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt; . passed
+* print xml ............................................................... passed
+* print xml/info/id ....................................................... passed
+* print xml.info.id ....................................................... passed
+* print xml.info.tool.name ................................................ passed
+Given def xml = ........................................................... passed
+* print xml/info/id ....................................................... passed
+* print xml.info.id ....................................................... passed
+* print xml.info.tool.name ................................................ passed</system-out>
+  </testcase>
+  <testcase classname="featurefile.karateTestSuite-03" name="XML test case 3" time="0.003766">
+    <system-out>Given def xml = &lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt; . passed
+* print xml ............................................................... passed
+* print xml/info/id ....................................................... passed
+* print xml.info.id ....................................................... passed
+* print xml.info.tool.name ................................................ passed
+Given def xml = ........................................................... passed
+* print xml/info/id ....................................................... passed
+* print xml.info.id ....................................................... passed
+* print xml.info.tool.name ................................................ passed
+Given def xml = &lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt; . passed
+* match xml/info/id == 101 ................................................ passed
+* match xml.info.tool.name == "Karate" .................................... passed</system-out>
+  </testcase>
+  <testcase classname="featurefile.karateTestSuite-03" name="XML test case 4" time="0.002696">
+    <failure message="karateTestSuite-03.feature:33 - path: , actual: '&lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt;', expected: 'xyz', reason: not a sub-string">Given def xml = &lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt; . passed
+* print xml ............................................................... passed
+* print xml/info/id ....................................................... passed
+* print xml.info.id ....................................................... passed
+* print xml.info.tool.name ................................................ passed
+Given def xml = ........................................................... passed
+* print xml/info/id ....................................................... passed
+* print xml.info.id ....................................................... passed
+* print xml.info.tool.name ................................................ passed
+Given def xml = &lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt; . passed
+* match xml/info/id == 101 ................................................ passed
+* match xml.info.tool.name == "Karate" .................................... passed
+Given def xml = &lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt; . passed
+* match xml contains "xyz" ................................................ failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karateTestSuite-03.feature:33 - path: , actual: '&lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt;', expected: 'xyz', reason: not a sub-string&#13;
+	at ✽.* match xml contains "xyz" (karateTestSuite-03.feature:33)&#13;
+
+* print "end of match" .................................................... skipped</failure>
+  </testcase>
+  <testcase classname="featurefile.karateTestSuite-03" name="XML test case 5" time="0.004508">
+    <system-out>Given def xml = &lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt; . passed
+* print xml ............................................................... passed
+* print xml/info/id ....................................................... passed
+* print xml.info.id ....................................................... passed
+* print xml.info.tool.name ................................................ passed
+Given def xml = ........................................................... passed
+* print xml/info/id ....................................................... passed
+* print xml.info.id ....................................................... passed
+* print xml.info.tool.name ................................................ passed
+Given def xml = &lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt; . passed
+* match xml/info/id == 101 ................................................ passed
+* match xml.info.tool.name == "Karate" .................................... passed
+Given def xml = &lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt; . passed
+* match xml contains "xyz" ................................................ failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karateTestSuite-03.feature:33 - path: , actual: '&lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt;', expected: 'xyz', reason: not a sub-string&#13;
+	at ✽.* match xml contains "xyz" (karateTestSuite-03.feature:33)&#13;
+
+* print "end of match" .................................................... skipped
+Given def xml = &lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt; . passed
+* match xml contains "Karate" ............................................. passed
+* match xml contains "&lt;name&gt;Karate&lt;/name&gt;" ................................ passed
+* print "end of match" .................................................... passed</system-out>
+  </testcase>
+  <testcase classname="featurefile.karateTestSuite-03" name="XML test case 6" time="0.003578">
+    <failure message="karateTestSuite-03.feature:58 - java.lang.ClassCastException@69854983">Given def xml = &lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt; . passed
+* print xml ............................................................... passed
+* print xml/info/id ....................................................... passed
+* print xml.info.id ....................................................... passed
+* print xml.info.tool.name ................................................ passed
+Given def xml = ........................................................... passed
+* print xml/info/id ....................................................... passed
+* print xml.info.id ....................................................... passed
+* print xml.info.tool.name ................................................ passed
+Given def xml = &lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt; . passed
+* match xml/info/id == 101 ................................................ passed
+* match xml.info.tool.name == "Karate" .................................... passed
+Given def xml = &lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt; . passed
+* match xml contains "xyz" ................................................ failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karateTestSuite-03.feature:33 - path: , actual: '&lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt;', expected: 'xyz', reason: not a sub-string&#13;
+	at ✽.* match xml contains "xyz" (karateTestSuite-03.feature:33)&#13;
+
+* print "end of match" .................................................... skipped
+Given def xml = &lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt; . passed
+* match xml contains "Karate" ............................................. passed
+* match xml contains "&lt;name&gt;Karate&lt;/name&gt;" ................................ passed
+* print "end of match" .................................................... passed
+Given def xml = ........................................................... passed
+* match xml/info/tool[1]/name contains "Karate" ........................... passed
+And match xml/info/tool[2]/name == "IntelliJ" ............................. passed
+* match xml/info/tool[1]/name contains "Karate" ........................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karateTestSuite-03.feature:58 - java.lang.ClassCastException@69854983&#13;
+	at ✽.* match xml/info/tool[1]/name contains "Karate" (karateTestSuite-03.feature:58)&#13;
+
+* match xml/info/tool[2]/name == "IntelliJ" ............................... skipped
+* print "end of match" .................................................... skipped</failure>
+  </testcase>
+</testsuite>

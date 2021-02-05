@@ -1,0 +1,9 @@
+<testsuite failures="0" name="src/test/java/featurefile/karate23_usingFile.feature" skipped="0" tests="1" time="1.073692">
+  <testcase classname="src.test.java.featurefile.karate23_usingFile" name="karate config Testcase" time="1.073692">
+    <system-out>Given url baseUrl ......................................................... passed
+And path listUsers ........................................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed</system-out>
+  </testcase>
+</testsuite>

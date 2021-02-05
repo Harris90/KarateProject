@@ -1,0 +1,14 @@
+<testsuite failures="0" name="src/test/java/featurefile/karate05SoapApi.feature" skipped="0" tests="1" time="1.408369">
+  <testcase classname="src.test.java.featurefile.karate05SoapApi" name="soap api TestCase1" time="1.408369">
+    <system-out>Given url "http://tempuri.org/calculator.asmx" ............................ passed
+And header Content-Type = "text/xml; charset=utf-8" ....................... passed
+And request ............................................................... passed
+When soap action "http://tempuri.org/Add" ................................. passed
+Then status 200 ........................................................... passed
+* print responseHeaders ................................................... passed
+* print responseType ...................................................... passed
+* print "Testing" ......................................................... passed
+* print response .......................................................... passed
+* assert responseTime &lt;= 2000 ............................................. passed</system-out>
+  </testcase>
+</testsuite>

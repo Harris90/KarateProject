@@ -1,0 +1,15 @@
+<testsuite failures="1" name="src/test/java/featurefile/karateTestSuite-03.feature" skipped="0" tests="1" time="0.020806">
+  <testcase classname="src.test.java.featurefile.karateTestSuite-03" name="XML test case 6" time="0.020806">
+    <failure message="karateTestSuite-03.feature:58 - argument type mismatch">Given def xml = ........................................................... passed
+* match xml/info/tool[1]/name contains "Karate" ........................... passed
+And match xml/info/tool[2]/name == "IntelliJ" ............................. passed
+* match xml/info/tool[1]/name contains "Karate" ........................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karateTestSuite-03.feature:58 - argument type mismatch&#13;
+	at ✽.* match xml/info/tool[1]/name contains "Karate" (karateTestSuite-03.feature:58)&#13;
+
+* match xml/info/tool[2]/name == "IntelliJ" ............................... skipped
+* print "end of match" .................................................... skipped</failure>
+  </testcase>
+</testsuite>
